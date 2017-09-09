@@ -16,12 +16,25 @@
 #                        Variable List and Initialization
 ######################################################################
 
-
+meterInches=39.3700787
+meterFeet=3.2808399
+meterMiles=0.00062137119
 
 ######################################################################
 #                      Calculate and Print the Answer
 ######################################################################
 
 
+numMeters=input ("Please enter the number of meters that you would like converted to inches, feet and miles:")
+numMeters=float(numMeters)
+
+numInches=(numMeters*meterInches)
+numFeet=(numMeters*meterFeet)
+numMiles=(numMeters*meterMiles)
+
+print ("\nThe number of meters you have entered is:",numMeters,"\n")
+print (numMeters,"meters =",numInches,"inches")
+print (numMeters,"meters =",numFeet,"feet")
+print (numMeters,"meters =",numMiles,"miles")
 
 
