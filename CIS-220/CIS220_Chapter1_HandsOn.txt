@@ -1,0 +1,180 @@
+who (1)              - show who is logged on
+who (1p)             - display who is on the system
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ ## Hands On Project 1-8
+[dtranb001@localhost ~]$ echo $SHELL
+/bin/bash
+[dtranb001@localhost ~]$ ## Hands On Project 1-9
+[dtranb001@localhost ~]$ date;cal
+Mon Jun  4 08:51:23 MDT 2018
+      June 2018     
+Su Mo Tu We Th Fr Sa
+                1  2
+ 3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+
+[dtranb001@localhost ~]$ date;who -uH
+Mon Jun  4 08:51:35 MDT 2018
+NAME     LINE         TIME             IDLE          PID COMMENT
+dtranb001 :0           2018-06-04 08:15   ?          9184 (:0)
+dtranb001 pts/0        2018-06-04 08:33   .         15957 (:0)
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ ## Hands On Project 1-10
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ date
+Mon Jun  4 08:52:20 MDT 2018
+[dtranb001@localhost ~]$ who
+dtranb001 :0           2018-06-04 08:15 (:0)
+dtranb001 pts/0        2018-06-04 08:33 (:0)
+[dtranb001@localhost ~]$ who -uH
+NAME     LINE         TIME             IDLE          PID COMMENT
+dtranb001 :0           2018-06-04 08:15   ?          9184 (:0)
+dtranb001 pts/0        2018-06-04 08:33   .         15957 (:0)
+[dtranb001@localhost ~]$ clear
+
+[dtranb001@localhost ~]$ who -uH
+NAME     LINE         TIME             IDLE          PID COMMENT
+dtranb001 :0           2018-06-04 08:15   ?          9184 (:0)
+dtranb001 pts/0        2018-06-04 08:33   .         15957 (:0)
+[dtranb001@localhost ~]$ ## Hands On Project 1-11
+[dtranb001@localhost ~]$ passwd
+Changing password for user dtranb001.
+Changing password for dtranb001.
+(current) UNIX password: 
+New password: 
+BAD PASSWORD: The password is the same as the old one
+New password: 
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ ## Hands On Project 1-12
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ cat /etc/shells
+/bin/sh
+/bin/bash
+/sbin/nologin
+/usr/bin/sh
+/usr/bin/bash
+/usr/sbin/nologin
+/bin/tcsh
+/bin/csh
+[dtranb001@localhost ~]$ cat -n /etc/shells
+     1	/bin/sh
+     2	/bin/bash
+     3	/sbin/nologin
+     4	/usr/bin/sh
+     5	/usr/bin/bash
+     6	/usr/sbin/nologin
+     7	/bin/tcsh
+     8	/bin/csh
+[dtranb001@localhost ~]$ ## Hands On Project 1-13
+[dtranb001@localhost ~]$ more /etc/termcap
+/etc/termcap: No such file or directory
+[dtranb001@localhost ~]$ ls
+Desktop  Documents  Downloads  linux-4.14.10.tar.xz  Music  nano_test1  Pictures  Public  Templates  Videos
+[dtranb001@localhost ~]$ more nano_test1 
+joy
+joy
+
+kkkkk
+
+ypo
+
+
+[dtranb001@localhost ~]$ ls /etc
+abrt                     crypttab                    flatpak             httpd          login.defs                nsswitch.conf.rpmnew  pulse             scl                system-release
+adjtime                  csh.cshrc                   fonts               idmapd.conf    logrotate.conf            ntp                   purple            securetty          system-release-cpe
+aliases                  csh.login                   fprintd.conf        init.d         logrotate.d               numad.conf            python            security           tcsd.conf
+aliases.db               cups                        fstab               inittab        lsm                       oddjob                qemu-ga           selinux            terminfo
+alsa                     cupshelpers                 fuse.conf           inputrc        lvm                       oddjobd.conf          qemu-kvm          services           tmpfiles.d
+alternatives             dbus-1                      gconf               iproute2       machine-id                oddjobd.conf.d        radvd.conf        sestatus.conf      trusted-key.key
+anacrontab               dconf                       gcrypt              ipsec.conf     magic                     openldap              ras               setroubleshoot     tuned
+asound.conf              default                     gdbinit             ipsec.d        mailcap                   opt                   rc0.d             setuptool.d        udev
+at.deny                  depmod.d                    gdbinit.d           ipsec.secrets  mail.rc                   os-release            rc1.d             sgml               udisks2
+audisp                   dhcp                        gdm                 iscsi          makedumpfile.conf.sample  PackageKit            rc2.d             shadow             unbound
+audit                    DIR_COLORS                  geoclue             issue          man_db.conf               pam.d                 rc3.d             shadow-            updatedb.conf
+avahi                    DIR_COLORS.256color         GeoIP.conf          issue.net      maven                     passwd                rc4.d             shells             UPower
+bash_completion.d        DIR_COLORS.lightbgcolor     GeoIP.conf.default  java           mcelog                    passwd-               rc5.d             skel               usb_modeswitch.conf
+bashrc                   dleyna-server-service.conf  ghostscript         jvm            mime.types                pbm2ppa.conf          rc6.d             smartmontools      vconsole.conf
+binfmt.d                 dnsmasq.conf                gnupg               jvm-commmon    mke2fs.conf               php.d                 rc.d              sos.conf           vimrc
+bluetooth                dnsmasq.d                   GREP_COLORS         kdump.conf     modprobe.d                php.ini               rc.local          speech-dispatcher  virc
+brltty                   dracut.conf                 groff               kernel         modules-load.d            pinforc               rdma              ssh                vmware-tools
+brltty.conf              dracut.conf.d               group               krb5.conf      motd                      pkcs11                redhat-release    ssl                wgetrc
+centos-release           drirc                       group-              krb5.conf.d    mtab                      pki                   request-key.conf  statetab           wpa_supplicant
+centos-release-upstream  e2fsck.conf                 grub2.cfg           ksmtuned.conf  mtools.conf               plymouth              request-key.d     statetab.d         wvdial.conf
+chkconfig.d              enscript.cfg                grub.d              ld.so.cache    multipath                 pm                    resolv.conf       subgid             X11
+chrony.conf              environment                 gshadow             ld.so.conf     my.cnf                    pnm2ppa.conf          rpc               subuid             xdg
+chrony.keys              ethertypes                  gshadow-            ld.so.conf.d   my.cnf.d                  polkit-1              rpm               subversion         xinetd.d
+cifs-utils               exports                     gss                 libaudit.conf  nanorc                    popt.d                rsyncd.conf       sudo.conf          xml
+cron.d                   exports.d                   gssproxy            libibverbs.d   netconfig                 postfix               rsyslog.conf      sudoers            yum
+cron.daily               favicon.png                 host.conf           libnl          NetworkManager            ppp                   rsyslog.d         sudoers.d          yum.conf
+cron.deny                fcoe                        hostname            libreport      networks                  prelink.conf.d        rwtab             sudo-ldap.conf     yum.repos.d
+cron.hourly              festival                    hosts               libuser.conf   nfs.conf                  printcap              rwtab.d           sysconfig
+cron.monthly             filesystems                 hosts.allow         libvirt        nfsmount.conf             profile               samba             sysctl.conf
+crontab                  firefox                     hosts.deny          locale.conf    nsswitch.conf             profile.d             sane.d            sysctl.d
+cron.weekly              firewalld                   hp                  localtime      nsswitch.conf.bak         protocols             sasl2             systemd
+[dtranb001@localhost ~]$ less /etc/environment
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ ## Hands On Project 1-14
+[dtranb001@localhost ~]$ head /etc/DIR_COLORS
+# Configuration file for the color ls utility
+# Synchronized with coreutils 8.5 dircolors
+# This file goes in the /etc directory, and must be world readable.
+# You can copy this file to .dir_colors in your $HOME directory to override
+# the system defaults.
+
+# COLOR needs one of these arguments: 'tty' colorizes output to ttys, but not
+# pipes. 'all' adds color characters to all output. 'none' shuts colorization
+# off.
+COLOR tty
+[dtranb001@localhost ~]$ head -m 5 /etc/DIR_COLORS
+head: invalid option -- 'm'
+Try 'head --help' for more information.
+[dtranb001@localhost ~]$ head -n 5 /etc/DIR_COLORS
+# Configuration file for the color ls utility
+# Synchronized with coreutils 8.5 dircolors
+# This file goes in the /etc directory, and must be world readable.
+# You can copy this file to .dir_colors in your $HOME directory to override
+# the system defaults.
+[dtranb001@localhost ~]$ tail /etc/DIR_COLORS
+#
+# colorize text documents (brown)
+#.txt 00;33
+#.patch 00;33
+#.diff 00;33
+#.log 00;33
+#.htm 00;33
+#.html 00;33
+#.shtml 00;33
+#.xml 00;33
+[dtranb001@localhost ~]$ tail -n 5 /etc/DIR_COLORS
+#.log 00;33
+#.htm 00;33
+#.html 00;33
+#.shtml 00;33
+#.xml 00;33
+[dtranb001@localhost ~]$ ## Hands On Project 1-15
+[dtranb001@localhost ~]$ who > current_users
+[dtranb001@localhost ~]$ cat current_users 
+dtranb001 :0           2018-06-04 08:15 (:0)
+dtranb001 pts/0        2018-06-04 08:33 (:0)
+[dtranb001@localhost ~]$ ## Hands On Project 1-16
+[dtranb001@localhost ~]$ cal 2009 > year_2009
+[dtranb001@localhost ~]$ less year_2009 
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ ## Hands On Project 1-17
+[dtranb001@localhost ~]$ cat > notes
+Remember to order a new CD-ROM and send the report by Thursday
+[dtranb001@localhost ~]$ cat notes
+Remember to order a new CD-ROM and send the report by Thursday
+[dtranb001@localhost ~]$ cat >> notes
+also remember to make reservations for Sept. conference
+[dtranb001@localhost ~]$ cat notes
+Remember to order a new CD-ROM and send the report by Thursday
+also remember to make reservations for Sept. conference
+[dtranb001@localhost ~]$ cal 9 2009 >> notes
+[dtranb001@localhost ~]$ less notes
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ 
+
