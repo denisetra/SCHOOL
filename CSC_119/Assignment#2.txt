@@ -1,0 +1,26 @@
+CSC 119 – Introduction to Programming: Python
+
+TOPIC 3
+
+TOPIC 3 – ASSIGNMENT #2
+
+ASSIGNMENT #2 – COMPLETE THE FOLLOWING:
+
+Chapter #2 :
+
+R2.15 (DESIGN ONLY – REFER TO THE INSTRUCTIONS BELOW)
+R2.16 (DESIGN ONLY – REFER TO THE INSTRUCTIONS BELOW)
+P2.6 (CODE ONLY – REFER TO THE INSTRUCTIONS BELOW)
+P2.7 (CODE ONLY – REFER TO THE INSTRUCTIONS BELOW)    
+
+INSTRUCTIONS:
+
+Using the information from Topic 3 OR the examples in the book/topic, complete each part of the assignment above.
+If you are creating a design, use Xmind or another design technique (please have it approved by me). No .odt files please!
+If you are creating a program, please use the Example program in this Topic 3 as a guide.
+Each part of this assignment is worth 15 points.
+Label each part of the assignment (e.g. Assignment #2 – R2.13) as you complete your work.
+Upload your four assignments to the Assignment 2 – "Assignment" drop box in D2L.                   
+Don’t forget to refer to the Grading Rubric for point deductions on your programs (located under the Content tab - Other Information).
+
+Spelling and grammar errors are ½ point per error.
