@@ -57,7 +57,7 @@ useLessTupple()
 def InputGrade():           #  Function to take the user input of grades
 
     try:                    #  Introducing exceptions on value of entry
-        grade=int(input('Please enter your first grade as an  integer between 0 an 100: '))
+        grade=int(input('Please enter your grade as an  integer between 0 an 100: '))
         if grade <0 or 100<grade:
             raise ValueError
 
@@ -103,7 +103,8 @@ def LetterDictionary():             # Created dictionary that associates number 
         letNumGrades.update({item[1]:item[0]})
 LetterDictionary()
 
-print ('\n\n',stats[0],', Thank you for using us today.  ')
+# Print the following out to screen.
+print ('\n\n',stats[0],', Thank you for using this tool today.  \n')
 print (stats[1],' is the most AMAZING color on the face of the planet!')
 print ('\nThe lowest grade that you earned was: ',lowestNumber)
 print ('\nThe highest grade that you earned was: ',highestNumber)
@@ -115,7 +116,7 @@ for entry in lisNumGrades:
 
 #print ('\nHere is a list of your scores: ', lisNumGrades)
 
-def CreateOutputFile():
+def CreateOutputFile(): # Create an output file in the current directory. 
     file=open('Outputfile.txt','w+')
     name=stats[0]
     color=str(stats[1])
@@ -132,11 +133,7 @@ def CreateOutputFile():
     numbers=(str(lowestNumber)+'/'+str(highestNumber)+'/'+str(adverageNumber))
     file.write('\n\n(minimum/maximum/average)   ')
     file.write(numbers)
-    # file.write(str(lowestNumber))
-    # file.write ('/')
-    # file.write (str(highestNumber))
-    # file.write ('/')
-    # file.write (str(adverageNumber))
+
     file.write('\n\nThank you and have a wonderful day')
     file.close()
 
