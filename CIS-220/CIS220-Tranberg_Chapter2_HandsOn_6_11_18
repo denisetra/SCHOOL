@@ -1,0 +1,462 @@
+
+[dtranb001@localhost ~]$ ## Denise Tranberg
+[dtranb001@localhost ~]$ ## 6/11/2018
+[dtranb001@localhost ~]$ ## Chapter 2 -Hands On Projects
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ man mount
+[dtranb001@localhost ~]$ ##-t types.. 44 currently supported. i.e.  ext4,proc,umsdos,xfs....
+[dtranb001@localhost ~]$ mount 
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+devtmpfs on /dev type devtmpfs (rw,nosuid,seclabel,size=926072k,nr_inodes=231518,mode=755)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,net_prio,net_cls)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpuacct,cpu)
+configfs on /sys/kernel/config type configfs (rw,relatime)
+/dev/mapper/cl-root on / type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+selinuxfs on /sys/fs/selinux type selinuxfs (rw,relatime)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=26,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=11564)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+mqueue on /dev/mqueue type mqueue (rw,relatime,seclabel)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel)
+nfsd on /proc/fs/nfsd type nfsd (rw,relatime)
+/dev/sda1 on /boot type xfs (rw,relatime,seclabel,attr2,inode64,noquota)
+sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=188352k,mode=700,uid=1000,gid=1000)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+[dtranb001@localhost ~]$ ^C
+[dtranb001@localhost ~]$ 
+
+
+[dtranb001@localhost ~]$ ## Project 2-3
+[dtranb001@localhost ~]$ 
+[dtranb001@localhost ~]$ echo $PS1
+[\u@\h \W]\$
+[dtranb001@localhost ~]$ PS1='\d \t'
+Mon Jun 11 10:29:33PS1='\w>'
+~>PS1='$PWD>'
+/home/dtranb001>
+Project 2-4
+changed back to the normal default because it was associated with session rather than user. 
+[dtranb001@localhost ~]$ pwd
+/home/dtranb001
+[dtranb001@localhost ~]$ 
+
+Project 2-5
+[dtranb001@localhost ~]$ PS1='$PWD>'
+/home/dtranb001>cd /var/spool/mail
+/var/spool/mail>cd
+/home/dtranb001>
+
+Project 2-6
+[dtranb001@localhost ~]$ cd /home
+[dtranb001@localhost home]$ cd dtranb001/
+[dtranb001@localhost ~]$ 
+
+Project 2-7
+
+[dtranb001@localhost ~]$ cd .
+[dtranb001@localhost ~]$ cd ..
+[dtranb001@localhost home]$ cd ..
+[dtranb001@localhost /]$ pwd
+/
+[dtranb001@localhost /]$ cd
+[dtranb001@localhost ~]$ pwd
+/home/dtranb001
+[dtranb001@localhost ~]$ 
+
+Project 2-8
+
+[dtranb001@localhost ~]$ ls
+current_users  Downloads             month       notes     Templates   who_info
+Desktop        favorite-foods        Music       Pictures  users_info  year_2009
+Documents      linux-4.14.10.tar.xz  nano_test1  Public    Videos
+[dtranb001@localhost ~]$ cat notes 
+Remember to order a new CD-ROM and send the report by Thursday
+also remember to make reservations for Sept. conference
+   September 2009   
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+
+[dtranb001@localhost ~]$ ls notes
+notes
+[dtranb001@localhost ~]$ ls /var
+account  cache  db     games   kerberos  local  log   nis  preserve  spool  www
+adm      crash  empty  gopher  lib       lock   mail  opt  run       tmp    yp
+[dtranb001@localhost ~]$ ls -l /dev
+total 0
+crw-------. 1 root    root     10, 235 Jun  4 08:15 autofs
+drwxr-xr-x. 2 root    root         160 Jun  4 08:15 block
+drwxr-xr-x. 2 root    root          80 Jun  4 08:15 bsg
+crw-------. 1 root    root     10, 234 Jun  4 08:15 btrfs-control
+drwxr-xr-x. 3 root    root          60 Jun  4 08:16 bus
+lrwxrwxrwx. 1 root    root           3 Jun  4 08:15 cdrom -> sr0
+drwxr-xr-x. 2 root    root        2880 Jun  4 08:15 char
+drwxr-xr-x. 2 root    root          80 Jun  4 08:15 cl
+crw-------. 1 root    root      5,   1 Jun  4 08:15 console
+lrwxrwxrwx. 1 root    root          11 Jun  4 08:15 core -> /proc/kcore
+drwxr-xr-x. 3 root    root          80 Jun  4 08:16 cpu
+crw-------. 1 root    root     10,  61 Jun  4 08:15 cpu_dma_latency
+crw-------. 1 root    root     10,  62 Jun  4 08:15 crash
+drwxr-xr-x. 5 root    root         100 Jun  4 08:15 disk
+brw-rw----. 1 root    disk    253,   0 Jun  4 08:15 dm-0
+brw-rw----. 1 root    disk    253,   1 Jun  4 08:15 dm-1
+drwxr-xr-x. 2 root    root          60 Jun  4 08:15 dri
+crw-rw----. 1 root    video    29,   0 Jun  4 08:15 fb0
+lrwxrwxrwx. 1 root    root          13 Jun  4 08:15 fd -> /proc/self/fd
+crw-rw-rw-. 1 root    root      1,   7 Jun  4 08:15 full
+crw-rw-rw-. 1 root    root     10, 229 Jun  4 08:15 fuse
+crw-------. 1 root    root     10, 228 Jun  4 08:15 hpet
+drwxr-xr-x. 3 root    root           0 Jun  4 08:15 hugepages
+crw-------. 1 root    root     10, 183 Jun  4 08:15 hwrng
+lrwxrwxrwx. 1 root    root          25 Jun  4 08:15 initctl -> /run/systemd/initctl/fifo
+drwxr-xr-x. 3 root    root         260 Jun  4 08:15 input
+crw-r--r--. 1 root    root      1,  11 Jun  4 08:15 kmsg
+srw-rw-rw-. 1 root    root           0 Jun  4 08:15 log
+crw-rw----. 1 root    disk     10, 237 Jun  4 08:15 loop-control
+crw-rw----. 1 root    lp        6,   0 Jun  4 08:15 lp0
+crw-rw----. 1 root    lp        6,   1 Jun  4 08:15 lp1
+crw-rw----. 1 root    lp        6,   2 Jun  4 08:15 lp2
+crw-rw----. 1 root    lp        6,   3 Jun  4 08:15 lp3
+drwxr-xr-x. 2 root    root         100 Jun  4 08:15 mapper
+crw-------. 1 root    root     10, 227 Jun  4 08:15 mcelog
+crw-r-----. 1 root    kmem      1,   1 Jun  4 08:15 mem
+drwxrwxrwt. 2 root    root          40 Jun  4 08:16 mqueue
+drwxr-xr-x. 2 root    root          60 Jun  4 08:15 net
+crw-------. 1 root    root     10,  60 Jun  4 08:15 network_latency
+crw-------. 1 root    root     10,  59 Jun  4 08:15 network_throughput
+crw-rw-rw-. 1 root    root      1,   3 Jun  4 08:15 null
+crw-------. 1 root    root     10, 144 Jun  4 08:15 nvram
+crw-------. 1 root    root      1,  12 Jun  4 08:15 oldmem
+crw-r-----. 1 root    kmem      1,   4 Jun  4 08:15 port
+crw-------. 1 root    root    108,   0 Jun  4 08:15 ppp
+crw-rw-rw-. 1 root    tty       5,   2 Jun 11  2018 ptmx
+drwxr-xr-x. 2 root    root           0 Jun  4 08:16 pts
+crw-rw-rw-. 1 root    root      1,   8 Jun  4 08:15 random
+drwxr-xr-x. 2 root    root          60 Jun  4 08:16 raw
+lrwxrwxrwx. 1 root    root           4 Jun  4 08:15 rtc -> rtc0
+crw-------. 1 root    root    253,   0 Jun  4 08:15 rtc0
+brw-rw----. 1 root    disk      8,   0 Jun  4 08:15 sda
+brw-rw----. 1 root    disk      8,   1 Jun  4 08:15 sda1
+brw-rw----. 1 root    disk      8,   2 Jun  4 08:15 sda2
+crw-rw----+ 1 root    cdrom    21,   0 Jun  4 08:15 sg0
+crw-rw----. 1 root    disk     21,   1 Jun  4 08:15 sg1
+drwxrwxrwt. 2 root    root          40 Jun  4 10:01 shm
+crw-------. 1 root    root     10, 231 Jun  4 08:15 snapshot
+drwxr-xr-x. 3 root    root         180 Jun  4 08:15 snd
+brw-rw----+ 1 root    cdrom    11,   0 Jun  4 08:15 sr0
+lrwxrwxrwx. 1 root    root          15 Jun  4 08:15 stderr -> /proc/self/fd/2
+lrwxrwxrwx. 1 root    root          15 Jun  4 08:15 stdin -> /proc/self/fd/0
+lrwxrwxrwx. 1 root    root          15 Jun  4 08:15 stdout -> /proc/self/fd/1
+crw-rw-rw-. 1 root    tty       5,   0 Jun 11 09:57 tty
+crw--w----. 1 root    tty       4,   0 Jun  4 08:15 tty0
+crw--w----. 1 root    tty       4,   1 Jun  4 08:15 tty1
+crw--w----. 1 root    tty       4,  10 Jun  4 08:15 tty10
+crw--w----. 1 root    tty       4,  11 Jun  4 08:15 tty11
+crw--w----. 1 root    tty       4,  12 Jun  4 08:15 tty12
+crw--w----. 1 root    tty       4,  13 Jun  4 08:15 tty13
+crw--w----. 1 root    tty       4,  14 Jun  4 08:15 tty14
+crw--w----. 1 root    tty       4,  15 Jun  4 08:15 tty15
+crw--w----. 1 root    tty       4,  16 Jun  4 08:15 tty16
+crw--w----. 1 root    tty       4,  17 Jun  4 08:15 tty17
+crw--w----. 1 root    tty       4,  18 Jun  4 08:15 tty18
+crw--w----. 1 root    tty       4,  19 Jun  4 08:15 tty19
+crw--w----. 1 root    tty       4,   2 Jun  4 08:15 tty2
+crw--w----. 1 root    tty       4,  20 Jun  4 08:15 tty20
+crw--w----. 1 root    tty       4,  21 Jun  4 08:15 tty21
+crw--w----. 1 root    tty       4,  22 Jun  4 08:15 tty22
+crw--w----. 1 root    tty       4,  23 Jun  4 08:15 tty23
+crw--w----. 1 root    tty       4,  24 Jun  4 08:15 tty24
+crw--w----. 1 root    tty       4,  25 Jun  4 08:15 tty25
+crw--w----. 1 root    tty       4,  26 Jun  4 08:15 tty26
+crw--w----. 1 root    tty       4,  27 Jun  4 08:15 tty27
+crw--w----. 1 root    tty       4,  28 Jun  4 08:15 tty28
+crw--w----. 1 root    tty       4,  29 Jun  4 08:15 tty29
+crw--w----. 1 root    tty       4,   3 Jun  4 08:15 tty3
+crw--w----. 1 root    tty       4,  30 Jun  4 08:15 tty30
+crw--w----. 1 root    tty       4,  31 Jun  4 08:15 tty31
+crw--w----. 1 root    tty       4,  32 Jun  4 08:15 tty32
+crw--w----. 1 root    tty       4,  33 Jun  4 08:15 tty33
+crw--w----. 1 root    tty       4,  34 Jun  4 08:15 tty34
+crw--w----. 1 root    tty       4,  35 Jun  4 08:15 tty35
+crw--w----. 1 root    tty       4,  36 Jun  4 08:15 tty36
+crw--w----. 1 root    tty       4,  37 Jun  4 08:15 tty37
+crw--w----. 1 root    tty       4,  38 Jun  4 08:15 tty38
+crw--w----. 1 root    tty       4,  39 Jun  4 08:15 tty39
+crw--w----. 1 root    tty       4,   4 Jun  4 08:15 tty4
+crw--w----. 1 root    tty       4,  40 Jun  4 08:15 tty40
+crw--w----. 1 root    tty       4,  41 Jun  4 08:15 tty41
+crw--w----. 1 root    tty       4,  42 Jun  4 08:15 tty42
+crw--w----. 1 root    tty       4,  43 Jun  4 08:15 tty43
+crw--w----. 1 root    tty       4,  44 Jun  4 08:15 tty44
+crw--w----. 1 root    tty       4,  45 Jun  4 08:15 tty45
+crw--w----. 1 root    tty       4,  46 Jun  4 08:15 tty46
+crw--w----. 1 root    tty       4,  47 Jun  4 08:15 tty47
+crw--w----. 1 root    tty       4,  48 Jun  4 08:15 tty48
+crw--w----. 1 root    tty       4,  49 Jun  4 08:15 tty49
+crw--w----. 1 root    tty       4,   5 Jun  4 08:15 tty5
+crw--w----. 1 root    tty       4,  50 Jun  4 08:15 tty50
+crw--w----. 1 root    tty       4,  51 Jun  4 08:15 tty51
+crw--w----. 1 root    tty       4,  52 Jun  4 08:15 tty52
+crw--w----. 1 root    tty       4,  53 Jun  4 08:15 tty53
+crw--w----. 1 root    tty       4,  54 Jun  4 08:15 tty54
+crw--w----. 1 root    tty       4,  55 Jun  4 08:15 tty55
+crw--w----. 1 root    tty       4,  56 Jun  4 08:15 tty56
+crw--w----. 1 root    tty       4,  57 Jun  4 08:15 tty57
+crw--w----. 1 root    tty       4,  58 Jun  4 08:15 tty58
+crw--w----. 1 root    tty       4,  59 Jun  4 08:15 tty59
+crw--w----. 1 root    tty       4,   6 Jun  4 08:15 tty6
+crw--w----. 1 root    tty       4,  60 Jun  4 08:15 tty60
+crw--w----. 1 root    tty       4,  61 Jun  4 08:15 tty61
+crw--w----. 1 root    tty       4,  62 Jun  4 08:15 tty62
+crw--w----. 1 root    tty       4,  63 Jun  4 08:15 tty63
+crw--w----. 1 root    tty       4,   7 Jun  4 08:15 tty7
+crw--w----. 1 root    tty       4,   8 Jun  4 08:15 tty8
+crw--w----. 1 root    tty       4,   9 Jun  4 08:15 tty9
+crw-rw----. 1 root    dialout   4,  64 Jun  4 08:15 ttyS0
+crw-rw----. 1 root    dialout   4,  65 Jun  4 08:15 ttyS1
+crw-rw----. 1 root    dialout   4,  66 Jun  4 08:15 ttyS2
+crw-rw----. 1 root    dialout   4,  67 Jun  4 08:15 ttyS3
+crw-------. 1 root    root     10, 239 Jun  4 08:15 uhid
+crw-------. 1 root    root     10, 223 Jun  4 08:15 uinput
+crw-rw-rw-. 1 root    root      1,   9 Jun  4 08:15 urandom
+crw-------. 1 root    root    249,   0 Jun  4 08:15 usbmon0
+crw-------. 1 root    root    249,   1 Jun  4 08:15 usbmon1
+crw-------. 1 root    root    249,   2 Jun  4 08:15 usbmon2
+crw-rw----. 1 vboxadd root     10,  58 Jun  4 08:15 vboxguest
+crw-rw-rw-. 1 vboxadd root     10,  57 Jun  4 08:15 vboxuser
+crw-rw----. 1 root    tty       7,   0 Jun  4 08:15 vcs
+crw-rw----. 1 root    tty       7,   1 Jun  4 08:15 vcs1
+crw-rw----. 1 root    tty       7,   2 Jun  4 08:15 vcs2
+crw-rw----. 1 root    tty       7,   3 Jun  4 08:15 vcs3
+crw-rw----. 1 root    tty       7,   4 Jun  4 08:15 vcs4
+crw-rw----. 1 root    tty       7,   5 Jun  4 08:15 vcs5
+crw-rw----. 1 root    tty       7,   6 Jun  4 08:15 vcs6
+crw-rw----. 1 root    tty       7, 128 Jun  4 08:15 vcsa
+crw-rw----. 1 root    tty       7, 129 Jun  4 08:15 vcsa1
+crw-rw----. 1 root    tty       7, 130 Jun  4 08:15 vcsa2
+crw-rw----. 1 root    tty       7, 131 Jun  4 08:15 vcsa3
+crw-rw----. 1 root    tty       7, 132 Jun  4 08:15 vcsa4
+crw-rw----. 1 root    tty       7, 133 Jun  4 08:15 vcsa5
+crw-rw----. 1 root    tty       7, 134 Jun  4 08:15 vcsa6
+drwxr-xr-x. 2 root    root          60 Jun  4 08:15 vfio
+crw-------. 1 root    root     10,  63 Jun  4 08:15 vga_arbiter
+crw-------. 1 root    root     10, 137 Jun  4 08:15 vhci
+crw-------. 1 root    root     10, 238 Jun  4 08:15 vhost-net
+crw-rw-rw-. 1 root    root      1,   5 Jun  4 08:15 zero
+[dtranb001@localhost ~]$ ls -l /
+total 24
+-rw-r--r--.   1 root root    0 Sep 15  2017 1
+lrwxrwxrwx.   1 root root    7 Sep 15  2017 bin -> usr/bin
+dr-xr-xr-x.   5 root root 4096 Jun  4 08:15 boot
+drwxr-xr-x.  20 root root 3220 Jun  4 08:15 dev
+drwxr-xr-x. 136 root root 8192 Jun  4 08:18 etc
+drwxr-xr-x.   3 root root   23 Sep 15  2017 home
+lrwxrwxrwx.   1 root root    7 Sep 15  2017 lib -> usr/lib
+lrwxrwxrwx.   1 root root    9 Sep 15  2017 lib64 -> usr/lib64
+drwxr-xr-x.   2 root root    6 Nov  5  2016 media
+drwxr-xr-x.   2 root root    6 Nov  5  2016 mnt
+drwxr-xr-x.   4 root root   49 Sep 15  2017 opt
+dr-xr-xr-x. 199 root root    0 Jun  4 08:16 proc
+dr-xr-x---.   5 root root  200 Jan 11 11:08 root
+drwxr-xr-x.  41 root root 1260 Jun 11 06:02 run
+lrwxrwxrwx.   1 root root    8 Sep 15  2017 sbin -> usr/sbin
+drwxr-xr-x.   2 root root    6 Nov  5  2016 srv
+dr-xr-xr-x.  13 root root    0 Jun  4 08:15 sys
+drwxrwxrwt.  16 root root 4096 Jun 11 10:51 tmp
+drwxr-xr-x.  13 root root  155 Sep 15  2017 usr
+drwxr-xr-x.  21 root root 4096 Jan 11 10:55 var
+[dtranb001@localhost ~]$ 
+
+[dtranb001@localhost ~]$ ls -a
+.              Documents             Music                      .vboxclient-display.pid
+..             Downloads             nano_test1                 .vboxclient-draganddrop.pid
+.bash_history  .esd_auth             notes                      .vboxclient-seamless.pid
+.bash_logout   favorite-foods        Pictures                   Videos
+.bash_profile  .ICEauthority         .pki                       .viminfo
+.bashrc        linux-4.14.10.tar.xz  Public                     who_info
+.cache         .local                .ssh                       year_2009
+.config        .lvm_history          Templates
+current_users  month                 users_info
+Desktop        .mozilla              .vboxclient-clipboard.pid
+[dtranb001@localhost ~]$ 
+
+Project 2-9
+[dtranb001@localhost ~]$ cat > first_name
+Denise[dtranb001@localhost ~]$ cat > middle_name
+Mary[dtranb001@localhost ~]$ cat > last_name
+Tranberg
+
+[dtranb001@localhost ~]$ cat full-name1.txt
+cat: full-name1.txt: No such file or directory
+[dtranb001@localhost ~]$ cat > full_name.txt
+Mary Denise Tranberg
+[dtranb001@localhost ~]$ cat > full_name22.txt
+Mary Denise Tranberg
+[dtranb001@localhost ~]$ mv full_name.txt full_name1.txt
+[dtranb001@localhost ~]$ ls
+current_users  favorite-foods   last_name             Music       Public      who_info
+Desktop        first_name       linux-4.14.10.tar.xz  nano_test1  Templates   year_2009
+Documents      full_name1.txt   middle_name           notes       users_info
+Downloads      full_name22.txt  month                 Pictures    Videos
+[dtranb001@localhost ~]$ ls *name
+first_name  last_name  middle_name
+[dtranb001@localhost ~]$ ls full_name?.txt
+full_name1.txt
+[dtranb001@localhost ~]$ ls *.txt
+full_name1.txt  full_name22.txt
+[dtranb001@localhost ~]$ 
+
+Project 2-10
+
+[dtranb001@localhost ~]$ cd
+[dtranb001@localhost ~]$ mkdir dept_4540
+[dtranb001@localhost ~]$ ls
+current_users  Downloads       full_name22.txt       month       Pictures    Videos
+dept_4540      favorite-foods  last_name             Music       Public      who_info
+Desktop        first_name      linux-4.14.10.tar.xz  nano_test1  Templates   year_2009
+Documents      full_name1.txt  middle_name           notes       users_info
+[dtranb001@localhost ~]$ cd dept_4540/
+[dtranb001@localhost dept_4540]$ cat > phones1
+319:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+[dtranb001@localhost dept_4540]$ vi phones1 
+[dtranb001@localhost dept_4540]$ cat phones1
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+[dtranb001@localhost dept_4540]$ cd 
+[dtranb001@localhost ~]$ mkdir dept_4550
+[dtranb001@localhost ~]$ ls
+current_users  Documents       full_name1.txt        middle_name  notes      users_info
+dept_4540      Downloads       full_name22.txt       month        Pictures   Videos
+dept_4550      favorite-foods  last_name             Music        Public     who_info
+Desktop        first_name      linux-4.14.10.tar.xz  nano_test1   Templates  year_2009
+[dtranb001@localhost ~]$ cd dept_4550/
+[dtranb001@localhost dept_4550]$ cat > 219:432:4591:Moore:Sarah
+[dtranb001@localhost dept_4550]$ rm 219\:432\:4591\:Moore\:Sarah 
+[dtranb001@localhost dept_4550]$ cat > phones2
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Lisa
+[dtranb001@localhost dept_4550]$ cat phones2
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Lisa
+[dtranb001@localhost dept_4550]$ 
+
+Project 2-11
+
+[dtranb001@localhost dept_4550]$ cd
+[dtranb001@localhost ~]$ mkdir corp_db
+[dtranb001@localhost ~]$ cd corp_db/
+[dtranb001@localhost corp_db]$ cp ~/dept_4540/phones1
+cp: missing destination file operand after ‘/home/dtranb001/dept_4540/phones1’
+Try 'cp --help' for more information.
+[dtranb001@localhost corp_db]$ cp ~/dept_4540/phones1 .
+[dtranb001@localhost corp_db]$ cp ~/dept_4550/phones2 .
+[dtranb001@localhost corp_db]$ ls
+phones1  phones2
+[dtranb001@localhost corp_db]$ cat phones1 phones2 > corp_phones
+[dtranb001@localhost corp_db]$ 
+
+[dtranb001@localhost corp_db]$ more corp_phones 
+219:432:4567:Harrison:Joel
+219:432:4587:Mitchell:Barbara
+219:432:4589:Olson:Timothy
+219:432:4591:Moore:Sarah
+219:432:4522:Polk:John
+219:432:4501:Robinson:Lisa
+[dtranb001@localhost corp_db]$ 
+
+
+Project 2-12
+
+
+[dtranb001@localhost corp_db]$ cd
+[dtranb001@localhost ~]$ ls
+corp_db        Documents       full_name22.txt       Music       Templates
+current_users  Downloads       last_name             nano_test1  users_info
+dept_4540      favorite-foods  linux-4.14.10.tar.xz  notes       Videos
+dept_4550      first_name      middle_name           Pictures    who_info
+Desktop        full_name1.txt  month                 Public      year_2009
+[dtranb001@localhost ~]$ chmod go+x ~
+[dtranb001@localhost ~]$ chmod ugo+x ~/corp_db
+[dtranb001@localhost ~]$ ls
+corp_db        Documents       full_name22.txt       Music       Templates
+current_users  Downloads       last_name             nano_test1  users_info
+dept_4540      favorite-foods  linux-4.14.10.tar.xz  notes       Videos
+dept_4550      first_name      middle_name           Pictures    who_info
+Desktop        full_name1.txt  month                 Public      year_2009
+[dtranb001@localhost ~]$ ls -l
+total 98492
+drwxrwxr-x. 2 dtranb001 dtranb001        55 Jun 11 11:05 corp_db
+-rw-rw-r--. 1 dtranb001 dtranb001        90 Jun  4 09:02 current_users
+drwxrwxr-x. 2 dtranb001 dtranb001        21 Jun 11 11:00 dept_4540
+drwxrwxr-x. 2 dtranb001 dtranb001        21 Jun 11 11:02 dept_4550
+drwxr-xr-x. 2 dtranb001 dtranb001        32 Jan 11 11:13 Desktop
+drwxr-xr-x. 2 dtranb001 dtranb001       172 Jun 11 10:28 Documents
+drwxr-xr-x. 2 dtranb001 dtranb001         6 Sep 15  2017 Downloads
+-rw-rw-r--. 1 dtranb001 dtranb001       147 Jun  4 09:53 favorite-foods
+-rw-rw-r--. 1 dtranb001 dtranb001         6 Jun 11 10:54 first_name
+-rw-rw-r--. 1 dtranb001 dtranb001        21 Jun 11 10:56 full_name1.txt
+-rw-rw-r--. 1 dtranb001 dtranb001        21 Jun 11 10:56 full_name22.txt
+-rw-rw-r--. 1 dtranb001 dtranb001        10 Jun 11 10:55 last_name
+-rw-rw-r--. 1 dtranb001 dtranb001 100800240 Dec 29 09:58 linux-4.14.10.tar.xz
+-rw-rw-r--. 1 dtranb001 dtranb001         4 Jun 11 10:55 middle_name
+-rw-rw-r--. 1 dtranb001 dtranb001       148 Jun  4 09:47 month
+drwxr-xr-x. 2 dtranb001 dtranb001         6 Sep 15  2017 Music
+-rw-rw-r--. 1 dtranb001 dtranb001        22 Jan  2 11:19 nano_test1
+-rw-rw-r--. 1 dtranb001 dtranb001       258 Jun  4 09:05 notes
+drwxr-xr-x. 2 dtranb001 dtranb001         6 Sep 15  2017 Pictures
+drwxr-xr-x. 2 dtranb001 dtranb001         6 Sep 15  2017 Public
+drwxr-xr-x. 2 dtranb001 dtranb001         6 Sep 15  2017 Templates
+-rw-rw-r--. 1 dtranb001 dtranb001        90 Jun  4 09:47 users_info
+drwxr-xr-x. 2 dtranb001 dtranb001         6 Sep 15  2017 Videos
+-rw-rw-r--. 1 dtranb001 dtranb001        90 Jun  4 09:50 who_info
+-rw-rw-r--. 1 dtranb001 dtranb001      1963 Jun  4 09:03 year_2009
+[dtranb001@localhost ~]$ chmod o+w ~/corp_db/*
+[dtranb001@localhost ~]$ ls -l ~/corp_db/
+total 12
+-rw-rw-rw-. 1 dtranb001 dtranb001 159 Jun 11 11:05 corp_phones
+-rw-rw-rw-. 1 dtranb001 dtranb001  84 Jun 11 11:04 phones1
+-rw-rw-rw-. 1 dtranb001 dtranb001  75 Jun 11 11:05 phones2
+[dtranb001@localhost ~]$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
