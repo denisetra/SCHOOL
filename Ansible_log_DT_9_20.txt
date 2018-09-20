@@ -1,0 +1,252 @@
+
+[dtranb001@localhost bcv-ansible]$ ansible-playbook playbooks/fix_keys.yml -e user=nagios -e host_list=broadsoft_log
+
+PLAY [broadsoft_log] *******************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************
+fatal: [wdv-log06.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added the RSA host key for IP address '76.96.104.74' to the list of known hosts.\r\nPermission denied (publickey,gssapi-with-mic,password).\r\n", "unreachable": true}
+fatal: [wdv-log05.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added the RSA host key for IP address '76.96.183.84' to the list of known hosts.\r\nWARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log10.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log12.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log11.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log09.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added the RSA host key for IP address '76.96.183.88' to the list of known hosts.\r\nWARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log14.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log16.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\nPermission denied (publickey,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log13.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\n \nPermission denied (publickey,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log18.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log15.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: WARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\nPermission denied (publickey,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log17.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log20.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added the RSA host key for IP address '172.30.176.237' to the list of known hosts.\r\nPermission denied (publickey,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log22.cmc.co.ndcwest.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added the RSA host key for IP address '172.20.174.11' to the list of known hosts.\r\nWARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\nBuild Completed - Tue Jun 20 15:54:01 UTC 2017\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log19.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+fatal: [wdv-log21.area4.il.chicago.comcast.net]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added the RSA host key for IP address '10.22.99.197' to the list of known hosts.\r\nWARNING:\n \n  This system  is solely for  the use of authorized  Comcast employees\n  and contractors.\n \n  Comcast  reserves the right  at any  time to  monitor usage  of this\n  system to ensure compliance with this policy, all applicable Comcast\n  policies that apply to electronic communications, and all applicable\n  laws.\n \n  Your use of this system constitutes your acceptance of and agreement\n  to all  applicable Comcast electronic  communications policies, your\n  consent to monitoring by Comcast,  and your express agreement to use\n  this system in compliance with all applicable laws.\n \n  Any unauthorized  use of or  access to this  system may result  in a\n  revocation of your user  privileges, other disciplinary action up to\n  and including termination of employment or contract, or referrals to\n  law enforcement  officials including  the provision evidence  of any\n  unauthorized use or access to law enforcement.\nBuild Completed - Mon Jun 19 15:44:22 UTC 2017\nPermission denied (publickey,gssapi-keyex,gssapi-with-mic,password,keyboard-interactive).\r\n", "unreachable": true}
+	to retry, use: --limit @/home/dtranb001/src/bcv-ansible/playbooks/fix_keys.retry
+
+PLAY RECAP *****************************************************************************************************
+wdv-log05.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log06.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log09.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log10.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log11.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log12.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log13.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log14.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log15.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log16.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log17.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log18.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log19.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log20.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log21.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+wdv-log22.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=1    failed=0   
+
+[dtranb001@localhost bcv-ansible]$ ssh nagios@wdv-log22.cmc.co.ndcwest.comcast.net
+WARNING:
+ 
+  This system  is solely for  the use of authorized  Comcast employees
+  and contractors.
+ 
+  Comcast  reserves the right  at any  time to  monitor usage  of this
+  system to ensure compliance with this policy, all applicable Comcast
+  policies that apply to electronic communications, and all applicable
+  laws.
+ 
+  Your use of this system constitutes your acceptance of and agreement
+  to all  applicable Comcast electronic  communications policies, your
+  consent to monitoring by Comcast,  and your express agreement to use
+  this system in compliance with all applicable laws.
+ 
+  Any unauthorized  use of or  access to this  system may result  in a
+  revocation of your user  privileges, other disciplinary action up to
+  and including termination of employment or contract, or referrals to
+  law enforcement  officials including  the provision evidence  of any
+  unauthorized use or access to law enforcement.
+Build Completed - Tue Jun 20 15:54:01 UTC 2017
+Password: 
+Last login: Thu Sep 20 15:01:09 2018 from 96.118.151.111
+[nagios@wdv-log22 ~]$ exit
+logout
+Connection to wdv-log22.cmc.co.ndcwest.comcast.net closed.
+[dtranb001@localhost bcv-ansible]$ ansible-playbook playbooks/fix_keys.yml -e user=nagios -e host_list=broadsoft_log -k
+SSH password: 
+
+PLAY [broadsoft_log] *******************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************
+fatal: [wdv-log06.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log06.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_B9FuJw/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log10.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log10.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_tg2WqE/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log11.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log11.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_Z7eq3h/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log09.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log09.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_FFk3fW/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log05.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log05.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_L18oi2/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log12.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log12.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_Fw0aLj/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log14.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log14.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_mz0TtK/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log16.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log16.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_Djlw0s/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log13.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log13.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_0eJLFo/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log18.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log18.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_pGaabF/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log20.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log20.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_n4uGy3/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log15.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log15.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_dg8pTQ/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log17.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log17.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_uarCSh/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log19.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log19.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_gto4I0/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+ok: [wdv-log22.cmc.co.ndcwest.comcast.net]
+ok: [wdv-log21.area4.il.chicago.comcast.net]
+
+TASK [let nagios on the target host trust your key] ************************************************************
+ [WARNING]: Unable to find '~/.ssh/id_rsa.pub' in expected paths (use -vvvvv to see paths)
+
+fatal: [wdv-log21.area4.il.chicago.comcast.net]: FAILED! => {"msg": "An unhandled exception occurred while running the lookup plugin 'file'. Error was a <class 'ansible.errors.AnsibleError'>, original message: could not locate file in lookup: ~/.ssh/id_rsa.pub"}
+ [WARNING]: Unable to find '~/.ssh/id_rsa.pub' in expected paths (use -vvvvv to see paths)
+
+fatal: [wdv-log22.cmc.co.ndcwest.comcast.net]: FAILED! => {"msg": "An unhandled exception occurred while running the lookup plugin 'file'. Error was a <class 'ansible.errors.AnsibleError'>, original message: could not locate file in lookup: ~/.ssh/id_rsa.pub"}
+	to retry, use: --limit @/home/dtranb001/src/bcv-ansible/playbooks/fix_keys.retry
+
+PLAY RECAP *****************************************************************************************************
+wdv-log05.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log06.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log09.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log10.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log11.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log12.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log13.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log14.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log15.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log16.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log17.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log18.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log19.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log20.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log21.area4.il.chicago.comcast.net : ok=1    changed=0    unreachable=0    failed=1   
+wdv-log22.cmc.co.ndcwest.comcast.net : ok=1    changed=0    unreachable=0    failed=1   
+
+[dtranb001@localhost bcv-ansible]$ ssh nagios@wdv-log22.cmc.co.ndcwest.comcast.net
+WARNING:
+ 
+  This system  is solely for  the use of authorized  Comcast employees
+  and contractors.
+ 
+  Comcast  reserves the right  at any  time to  monitor usage  of this
+  system to ensure compliance with this policy, all applicable Comcast
+  policies that apply to electronic communications, and all applicable
+  laws.
+ 
+  Your use of this system constitutes your acceptance of and agreement
+  to all  applicable Comcast electronic  communications policies, your
+  consent to monitoring by Comcast,  and your express agreement to use
+  this system in compliance with all applicable laws.
+ 
+  Any unauthorized  use of or  access to this  system may result  in a
+  revocation of your user  privileges, other disciplinary action up to
+  and including termination of employment or contract, or referrals to
+  law enforcement  officials including  the provision evidence  of any
+  unauthorized use or access to law enforcement.
+Build Completed - Tue Jun 20 15:54:01 UTC 2017
+Password: 
+Last login: Thu Sep 20 15:04:48 2018 from 10.171.51.254
+[nagios@wdv-log22 ~]$ cat .ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAgEAz6AUTc4vG3qFtiPw3At38UfmAa9Q6lY3Wu1glTZ7ahOLipJS/JlIuMUPFusO5RgIlSUeUwqgMMrcK063jDfaQ4tX9mzD7GMEffrXwCLMYUrUmWmW1KZCjcGdQpij+39ivIE5YPL9+Aodx9Vp3BMNIfcxWDxej2MNgZ489EkuCgqSD5rUXbTAITfj+nuU11R+rOGIMhz/xBpuP5SsfCFvq5zwGcSdp+ggOJ55x3par6WVvLRvGceeQqM+IW09dVuHVERFfJKv/5GYEPz3CjJmIqIpYvquhF+pI/UZpvOlYJNxYiWgOfmYgrt+ep0rJEbKXc0OVjAhiTuV28/E4nOgCV6862hQai+9I/zswJ+3bAynJcOE12L1pGqTVK9zdJ4XQuJhaVgYMzp5Y1t3GmO5In3XaVYVpiZdv34tW/nMrHjiIeGLyEIi+1eCDpOk/fIk1cnOzMC/X3SljwUDgLzI6+e9vRy5RvRtIDYkI/GVI+SDEwIdEVbzapTDTL43ef1xKJJa0ACUunH5x+Gke+ckocCeJBVq/6sBAtXmS6GoRg0X3WpAoDbWBJy+ZcX0/N2WsKECoym6thwTMFD9d7/OiuB6qL0kjheux/2IJnJuCqJbsZBVZetZlWV//96Jqh/vqHv3nF5gthSAntBXIZIkLp/8sIYqR5P73fhqWcCQU9E= root@mobility
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDvF4NgOhf97qx6U4RFm+YxqV4ZhGvHeaONQnqXH3R+WlaxY5QSo1wejW/9C3NJK2UQxHlMbCdm+JPNruadzYCTit+Ncp99IhxAkRQ79381GqsWRapSNltfP2Kjri5hM5pN5+V2btTZ585ax/AorRvauxkqoHIn3vPsX2IDckBw6/6p24NHUv0A/9XglLtXD4uBHAaEBiyq8cDT8cHgCZQsvw92zz8CiIVwbjfbpi7zLt7F/VGrcETz/48Ajl5CFZCIVqOEBf/0wDY3CFUuS+QFbSSwv0pG+HRMIqJ7f0OebaxQb6mVo4kyElLNVTCBcNW9RlQ5Nu6dPythpZTA75n keith@kchris0000dev
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDlwGG4P1LLX8m4UqEEvvd/KPskyH1Uv6xFh3WI//xTrPDdjNKfcIkFytRkPzojEg4q0V3kQx0vSUdRcfaV9erY1bGbWHytnuFMycDG/SpJJjR+WXItWDFmrwm54pgngy3Fe6tOovBptiTgyJXfksAypiDlxaxT3N5nUZ/uOa5ve+cehAYopj/YYqaYQCneIMYSmiG7jgfaAPMa3Jc0JR4vfOyVGVI+AKR1ZtK3Yb1+njVIH6b8i4Zr6rthGjqqlH2K8iVqg1+TM+YI4qqPu/f83XYI4EhyeFa+99aAFU/mv6R6xfn5JL7KAyrgf8P8qbpmtiF0kZSTXCCLbMmXXyHH cfedde200@HQSWL-C020628
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAz4zjlTn6KdblFUm8cZT4xIKZYnvpv29OsY7KnMeBdfzuJfjEEdTj1Ogst/FWyggNtH7AJDhl5G1jySPLwCELsh9m/ucimC6brwXnGiibF9Mo4X1HwHxG1wG18FRmScCwXesp0sAvvjOvCAoIPKZzQxdhhcbg8l1LIt1NmCqP3JvIgBUErBqosUIgceDVmmX5wMgn1dzo8u+3ns0Zz+/fY+yocsCJC4NkMHMGfYztWfIARdRU7zfPuEkMXan7MPrfGS5VAlcjBCPlWefifOYtcLqX04ZgZK+BdBx6BAGVCmegkQzM/BhZDKPJKdR8hbpWMwy5eMLCocuPd+Kya0vbMw== bcv@bcvops01.novalocal
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2e76AbeHeqczUiUYjNhiacUn4xU/pJ7b4lSnZby4D9X2+d1iqZafiQuc7LKUW7PyiaWmfFryMyf9z+Y2YR1Yu8x/Ofg/39CKvorx23IGmRK4go+qkUwD1htbcwwTMixJ9g8DYbjs6JIwN6MK7qTx5M78vDlTBGfnq7vHMzdMfjWQzYuIgsAe4QqcGK7K2OJGnMYwgpQYWa0mQtPzBRZxsqm9mXdOQBJTqhs9kolAelT1edTavNEvEBWp0kLZakg49sX8MrnnMp0gejpZYQdi5FB0vHC2Jq0/w6sKEPJS1KhEz4xvyVvSzb3U/4y1oRcr0rU2q0ap7CSf4mDav1nIn keith@kchris0000dev2
+ssh-dss AAAAB3NzaC1kc3MAAACBAMtXyx7ohhp2oh6BrWBpDh2ff5bENi18RRGFBt3zJSjzQvWihiaI1c4hnJRdPaHvC5cT2ISnfscL8T+/FXeGOS83DZJk8ZaMnyKe6jmRu9kALIo8PzV8m+YHeBja0C6byclhJ2HsxD6ir233+oeoQ92fUs4W+v3D+G/ElXB/bOMDAAAAFQC139x946QAf/tbh88nR/lNDIb5DwAAAIAXbZWWqcIAXbc8pfd/81IafOALvvm9AWSehweM9ZB5VKr1aiZMWqYG9So8XCW3PBbwOVOrd0w1GWrKUY3SZi7DvhZiLYvdyEweSP1Vw0jAM/vlUHyKpR2OZ0bUT16m/LLXwoMwvw99I1y0YeJ62X7v1+vQPs45dZoPm1imLpb6VgAAAIAtz5nqhfcDdZ6iyEavXmQSy/6PJZ5OjVXoFSmDAbGEoYBUUPdZLaFXgP4APRu4mZONRFE/q15ZxPM9ZTKWs1s0PP9oWtCZ3P2w++fUFL2sigKgIZf979X/OaJ9czg6xLAEK1/GwqJHTTSiIqp7F4GrUuhftZVCcexsGBKr/2znQQ== ggroom@xplatops01
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA4rMau8KTyG0m30Fnh5hg0VZ0pdZP3eQewqWQ8PaQaxESLX3iC+VWw5xINGMcbbyyYk8Zxz1RvZd2XG7vM+or+GTkRPlsK5MTkHzDNoR80+4Ra+rqHBu8ZIS1RtGC8OS+WWLw2yo/n2CFtixMv55kAs4HTAJU84AVMUzocWQxnOobltpyYT7PwdT1hD4eX5SYkkvR79MBIEi0rjC90kLoIqpkwDC16mG5Xcc4ED1MeoSoz11I2778Go+nY2JY3DFgVScwo26LmR1d+TUo7MLupL3uC1JWaThirqePeYMsMwI+kwSO6VEOiGLldVmikFZSufbaMqkqJ2LidPuOjUzxtQ== jspron000@bcvops01.b.comcast.net
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKSIRTcwy1c3SzJZrBD0h4TzqlWJj94RRwYlUUzxOtLywHyup+e5/n+XWCxK7gRw9GhM0JhOsajIafCYoTAQ/yiTFIT+wFRgSW4NJcrUc3fiPwCYshr6W//kSeHaiXj+vRdGA00tdexBl59xOGDf8hVl2QmFzbTzw2XIRNPnLwLFNshZJKRJYrbmiv490Khz7yqBblWUPxhNaXpmqp7+/hHVtxEbMGnXmYSF2GPBe/cfj9UYZO8sfLbAcKpfbfOb2icExkEa/duWd7PVOUO13lta2Iz0bE8RqTQecjET/VNTQgLT7ioOqmaAis1cDIEumXvHg3b1zXNmFXAEk9gtdF cfedde200@localhost.localdomain
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCkLJaFD3hrrAThl7aVqS8Hf8V/O/ZTr54RHeOSN3HfAGYIJhS/vaEZ+zFu8TlbkB7RuRt8krlLtm2zOmZQpCm65RrP/Nc+q+HaBrGFQDQnpHJbSjwDBWP8CNlelpL0R2+m6lJIELLEQWE1LFNYPoFn5B3LaE5DJM1gZdTZmrvd9zK5gdk74f729i6b/iKjvoLLJxpnZiMAU7t0vkdG/cDSabdGDOGitdRB7MRX19Ll2n2S5qKmcSC9f1pHEhK8fahM+FdFlY+9TIT0eXgQbtHFkvv3FxdRJCFfGTMwIyW+bhCMKG3vhu/bL0HqWbSiJLCJICKVn5gaGIWNECtmPmsh cfedde@crf3333
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWSKKx/wYsj+EhX+Tcbrj+esNFH7RaWsqbpm0cEKx3ezJGMc0b1XkL9szxxl7DJY8yon2DtHvwzFPu2ZEglF9ScQjm4UAO93J/xnD2PAngGL41qPAHhdwNr9low9ZeAq/wMdmQ82QNT1Ak3bPd9o0G+Zmlf19QTcYhvFyg6r11278V2Rh0hrRMwFiAL0MxTrfxSAlgoyEvztEtjcBAnzqk0vFs1PtMV0OLqrFERnunSTGok/2a5sMtA7kUBaQrjKHicju5LTdnkpM5XltcmA7qraskX8d3Lg+eOevfZBXogM3frA8DZkf7CuF3s6/n4s7LIZWiMtnYMmf3wgi6VzYR keith@kchris0000dev2
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHUf1sYzsAzpYDmynF9HfAmLYrZ/V/tK0ahMvDJF1dab9xxrWmRBmm4ocfdqTSRXeiuDsqKYrWv628lM1MMqhpL8porJbLgZDPkslIccfXj0pJq5V6yetUiGNzd0IciB+pCvFuIREbV+kYO4xeclNrsX4Vu8cjmcaNJvbpiyxHQ83wT289+T6XONvepWyzoGEoYK2BSRt94E6CeRF5XYaRJV74QUcO1sFgwJAALyWPthw+WvZeIRclxIIljXYVaxBTlrIdeAkroTnUXvS9OU2nttS4+btGhy2MFzC1WtvQlEHk2sPRF/MBNOPy2g/ohkI7qe5L8nuSz812VNejz+wP jspron000@Jason-CentosMinimal
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCz3UGe5lJXIgA/0pRNpfVjboNfT7vTN0Obk7A3YmHIHDylK+0AVT/9Bd7wTbQs4QOLpvr9SQhTbK9ThDgcAo99SPWgUCuqm7tb51ondOBEGGPoHNBPJgGaOaekaZJCmLa3akAXoDj9AA9zePSgginOjxtA3WHBRLV6MZKmL1LA8qT+zJpS0+3JeFRpitg1v8+m5z1nJc1H1Pr6Ml26jsLuOA6W8xYv3HJF+dRYsjcFh8725Nd5suWr15rAiJzknFOf8gis3bi71ERT674pIugmRbM7KSlN/JE4G9E15mi2R9O0K+fP++ogbBL+i3FpZ9AJxi3tnGDxTcpzLi21Q5xz kchris0000@bcvmontool01.w.comcast.net.openstacklocal
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDm5yyP7MoNmjoXqrvO7xGqB2p/VWyOSDxs7q+JWa/o2YkMlHQSv2aUtYUNBNg2BMSe6Ta/xTzhL6VOWO+UU4MmFfrJ4jzNzgYrtJC/OjHGRJeoWs5SmCj9Hw7W2YbFuK7hEfAtQMGdR2rui6836PqVY+M7oF5T3HZcAYvCgLV1uqYDHrt4taMdyodJc6QK1uky3mHkMkV6BtvWc/nWRomDitH7Dcnm26M0T5fFgjvgIIbglpi7bOs0ab4nYxQusiLB9hG4frEYVaymu2GoYxzrHc/yYq4pup5pIm77bfplm43bBl4JTlK6SYaumlk3HMzNhWGSY3iqtfApH7d+ozqp asadaf193@abe01.w.comcast.net.openstacklocal
+[nagios@wdv-log22 ~]$ exit
+logout
+Connection to wdv-log22.cmc.co.ndcwest.comcast.net closed.
+[dtranb001@localhost bcv-ansible]$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/dtranb001/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/dtranb001/.ssh/id_rsa.
+Your public key has been saved in /home/dtranb001/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:1z1SbYR8UXCVFy6COKOZTVLrJM3S3+f102JjZ65La3A dtranb001@localhost.localdomain
+The key's randomart image is:
++---[RSA 2048]----+
+|       .     ..=@|
+|      = o .   +=o|
+|     + @ . . ..o+|
+|      % + ...o.. |
+|     + oS...o.o. |
+|         .  +.E.o|
+|             +*.=|
+|             +.B.|
+|             .+o.|
++----[SHA256]-----+
+[dtranb001@localhost bcv-ansible]$ ansible-playbook playbooks/fix_keys.yml -e user=nagios -e host_list=broadsoft_log -k
+SSH password: 
+
+PLAY [broadsoft_log] *******************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************
+fatal: [wdv-log10.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log10.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_y-jZq7/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log06.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log06.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_JdKjiO/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log05.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log05.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_g3qFx_/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log09.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log09.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_Kcgruy/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log11.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log11.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_aV3sj-/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log12.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log12.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_mOxtFk/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log16.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log16.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_8Zqf45/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log14.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log14.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_iQUkFO/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log13.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log13.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_KOyntC/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log18.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log18.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_tWaaga/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log20.cmc.co.ndcwest.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log20.cmc.co.ndcwest.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_iJSvQ1/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log15.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log15.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_Z9-J1s/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log17.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log17.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_7WgXHl/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+fatal: [wdv-log19.area4.il.chicago.comcast.net]: FAILED! => {"changed": false, "module_stderr": "Shared connection to wdv-log19.area4.il.chicago.comcast.net closed.\r\n", "module_stdout": "  File \"/tmp/ansible_DDSEDf/ansible_module_setup.py\", line 7\r\n    from __future__ import absolute_import, division, print_function\r\nSyntaxError: future feature absolute_import is not defined\r\n", "msg": "MODULE FAILURE", "rc": 1}
+ok: [wdv-log22.cmc.co.ndcwest.comcast.net]
+ok: [wdv-log21.area4.il.chicago.comcast.net]
+
+TASK [let nagios on the target host trust your key] ************************************************************
+changed: [wdv-log22.cmc.co.ndcwest.comcast.net]
+changed: [wdv-log21.area4.il.chicago.comcast.net]
+	to retry, use: --limit @/home/dtranb001/src/bcv-ansible/playbooks/fix_keys.retry
+
+PLAY RECAP *****************************************************************************************************
+wdv-log05.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log06.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log09.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log10.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log11.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log12.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log13.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log14.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log15.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log16.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log17.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log18.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log19.area4.il.chicago.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log20.cmc.co.ndcwest.comcast.net : ok=0    changed=0    unreachable=0    failed=1   
+wdv-log21.area4.il.chicago.comcast.net : ok=2    changed=1    unreachable=0    failed=0   
+wdv-log22.cmc.co.ndcwest.comcast.net : ok=2    changed=1    unreachable=0    failed=0   
+
+[dtranb001@localhost bcv-ansible]$ ssh nagios@wdv-log22.cmc.co.ndcwest.comcast.net
+WARNING:
+ 
+  This system  is solely for  the use of authorized  Comcast employees
+  and contractors.
+ 
+  Comcast  reserves the right  at any  time to  monitor usage  of this
+  system to ensure compliance with this policy, all applicable Comcast
+  policies that apply to electronic communications, and all applicable
+  laws.
+ 
+  Your use of this system constitutes your acceptance of and agreement
+  to all  applicable Comcast electronic  communications policies, your
+  consent to monitoring by Comcast,  and your express agreement to use
+  this system in compliance with all applicable laws.
+ 
+  Any unauthorized  use of or  access to this  system may result  in a
+  revocation of your user  privileges, other disciplinary action up to
+  and including termination of employment or contract, or referrals to
+  law enforcement  officials including  the provision evidence  of any
+  unauthorized use or access to law enforcement.
+Build Completed - Tue Jun 20 15:54:01 UTC 2017
+Last login: Thu Sep 20 15:07:27 2018 from 10.171.51.254
+[nagios@wdv-log22 ~]$ 
+
